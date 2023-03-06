@@ -50,10 +50,10 @@ export default {
                         Date: {{ date(weather.weather.current.dt)  }}
                     </div>
                     <div class="w-1/2 px-10 py-5 md:w-1/2 sm:w-full">
-                        Time: {{ date(weather.weather.current.dt)   }}
+                        Time: {{ time(weather.weather.current.dt)   }}
                     </div>
                     <div class="w-1/2 px-10 py-5 md:w-1/2 sm:w-full">
-                        Temperature: {{ weather.weather.current.temp}} 
+                        Temperature: {{ weather.weather.current.temp}} kelvin
                     </div>
                     <div class="w-1/2 px-10 py-5 md:w-1/2 sm:w-full">
                         Humidity: {{ weather.weather.current.humidity }} %
@@ -64,6 +64,13 @@ export default {
                     <div class="w-1/2 px-10 py-5 md:w-1/2 sm:w-full">
                         Longitude: {{ weather.longitude }}
                     </div>
+                    <div class="w-1/2 px-10 py-5 md:w-1/2 sm:w-full">
+                    Sunrise: {{ time(weather.weather.current.sunrise)}}
+                    </div>
+                    <div class="w-1/2 px-10 py-5 md:w-1/2 sm:w-full">
+                        Sunset: {{ time(weather.weather.current.sunset)}}
+                    </div>
+                
                 </div>
             </div>
     </div>
