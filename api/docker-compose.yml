@@ -1,4 +1,5 @@
-name: fullstack-challenge
+version: '3'
+# name: fullstack-challenge
 services:
     app:
         build:

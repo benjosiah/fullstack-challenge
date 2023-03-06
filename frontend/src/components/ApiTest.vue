@@ -18,14 +18,17 @@ export default {
 </script>
 
 <template>
-  <div v-if="!apiResponse">
-    Pinging the api...
-  </div>
+    <div>
+      <div class="bg-green-400" v-if="!apiResponse">
+      Pinging the api...
+    </div>
 
-  <div v-if="apiResponse">
-    The api responded with: <br />
-    <code>
-    {{ apiResponse }}
-    </code>
+    <div class="text-green-600" v-if="apiResponse">
+      The api responded with: <br />
+      <code>
+      {{ apiResponse }}
+      </code>
+    </div>
   </div>
+  
 </template>

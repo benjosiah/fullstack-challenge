@@ -3,16 +3,22 @@ import { RouterLink, RouterView } from "vue-router";
 </script>
 
 <template>
-  <header>
-    <div class="wrapper">
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-      </nav>
-    </div>
-  </header>
-  <RouterView />
+  <div class=" ">
+    <header class="w-full bg-black px-5 py-10 flex lg:justify-start">
+    
+      <div class="text-white text-3xl font-bold">
+        <nav>
+          <RouterLink to="/">Weather App</RouterLink>
+        </nav>
+      </div>
+    </header>
+
+  <router-view/>
+</div>
 </template>
 
-<style scoped>
-
+<style>
+  body{
+    background: rgba(11, 2, 64, 0.266);
+  }
 </style>
